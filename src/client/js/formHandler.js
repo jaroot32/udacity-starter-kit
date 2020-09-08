@@ -18,8 +18,8 @@ function handleSubmit(event) {
         validUrl['url'] = formResponse;
     }
 
-    Client.poster('http://localhost:8081/url', validUrl).then(function () {
-        Client.getter('http://localhost:8081/aylien').then(function(data) {
+    Client.poster('http://localhost:5000/url', validUrl).then(function () {
+        Client.getter('http://localhost:5000/aylien').then(function(data) {
            
             let newEntries = Client.entries(data);
             

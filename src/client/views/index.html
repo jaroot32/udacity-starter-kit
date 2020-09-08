@@ -2,36 +2,31 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Test</title>
-        <link rel="stylesheet" href="/styles/resets.css">
-        <link rel="stylesheet" href="/styles/base.css">
-        <link rel="stylesheet" href="/styles/header.css">
-        <link rel="stylesheet" href="/styles/form.css">
-        <link rel="stylesheet" href="/styles/footer.css">
+        <title>Aylien API - Project 4</title>
     </head>
-
     <body>
-
         <header>
-            <div class="">
-                Logo
+            <div class="logo">
+                <h1>Logo</h1>
             </div>
-            <div class="">
-                navigation
+            <div class="navigation">
+                <h1>Navigation</h1>
             </div>
         </header>
-
         <main>
             <section>
-                <form class="" onsubmit="return Client.handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
-                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                <form class="form" onsubmit="Client.handleSubmit(event)">
+                    <label for="url">Analyze your URL:</label><span id="error"></span>
+                    <!-- onblur="onBlur()"  -->
+                    <input id="url" type="url" name="url" value="" placeholder="Website URL to 'Aylienize'">
+                    <!--  -->
+                    <input type="submit" name="" value="submit" onclick="Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                 </form>
             <section>
 
             <section>
                 <strong>Form Results:</strong>
-                <div id="results"></div>
+                <div id="entryList"></div>
             </section>
         </main>
 

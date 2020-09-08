@@ -1,18 +1,18 @@
 import { checkForName } from './js/nameChecker'
 import { handleSubmit } from './js/formHandler'
-
-import './styles/resets.scss'
-import './styles/base.scss'
-import './styles/footer.scss'
-import './styles/form.scss'
-import './styles/header.scss'
-
-console.log(checkForName);
-
-alert("I EXIST")
-console.log("CHANGE!!");
+import { entries } from './js/entries'
+import { clearEntries } from './js/clearEntries'
+import { displayEntries } from './js/displayEntries'
+import { poster } from './js/async-post';
+import { getter } from './js/async-get';
+import './styles/main.scss'
 
 export {
     checkForName,
-    handleSubmit
-   }
+    handleSubmit,
+    entries,
+    clearEntries,
+    displayEntries,
+    poster,
+    getter
+}

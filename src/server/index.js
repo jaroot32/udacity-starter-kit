@@ -4,7 +4,7 @@ const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
 var aylien = require("aylien_textapi");
-// const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 dotenv.config();
 
 const app = express();
@@ -65,6 +65,6 @@ app.get('/', function (req, res) {
 });
 
 // designates what port the app will listen to for incoming requests
-app.listen(8081, function () {
+app.listen(PORT, function () {
     console.log('Example app listening on port 8081!')
 });

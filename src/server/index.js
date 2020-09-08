@@ -1,23 +1,23 @@
 var path = require('path');
-const cool = require('cool-ascii-faces');
+// const cool = require('cool-ascii-faces');
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
 var aylien = require("aylien_textapi");
-const PORT = process.env.PORT || 5000;
+// const PORT = process.env.PORT || 5000;
 dotenv.config();
 
 const app = express();
 
 // Heroku configuration to push locally
 
-express()
-  .use(express.static(path.join(__dirname, 'public')))
-  .set('views', path.join(__dirname, 'views'))
-  .set('view engine', 'ejs')
-  .get('/', (req, res) => res.render('src/client/views/index.html'))
-  .get('/cool', (req, res) => res.send(cool()))
-  .listen(PORT, () => console.log(`Listening on ${ PORT }`));
+// express()
+//   .use(express.static(path.join(__dirname, 'public')))
+//   .set('views', path.join(__dirname, 'views'))
+//   .set('view engine', 'ejs')
+//   .get('/', (req, res) => res.render('src/client/views/index.html'))
+//   .get('/cool', (req, res) => res.send(cool()))
+//   .listen(PORT, () => console.log(`Listening on ${ PORT }`));
 
 app.use(express.static('dist'));
 

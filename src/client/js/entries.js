@@ -1,5 +1,5 @@
 function entries(arr) {
-    console.log(arr);
+    
         let html_entries = [];
      
             for (let i = 0; i < arr.length; i++) {
@@ -18,11 +18,11 @@ function entries(arr) {
                 <h2>Article Text:</h2>
                 <div id="content"><p>${str}</p></div>
             </div>`
-                
+            
             html_entries.push(div);
 
             }
-            
+    
         return html_entries;
 
 }

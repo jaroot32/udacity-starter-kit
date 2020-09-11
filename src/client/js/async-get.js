@@ -1,3 +1,5 @@
+const fetch = require("node-fetch");
+
 const getter = async (url = '') => {
 
     const request = await fetch(url, {
@@ -13,12 +15,6 @@ const getter = async (url = '') => {
     try {
 
         const newList = await request.json();
-
-        // console.log(newList)
-        
-        // let newEntries = Client.entries(newList);
-        
-        // Client.displayEntries(newEntries);
 
         return newList;
 

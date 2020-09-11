@@ -1,3 +1,5 @@
+const fetch = require("node-fetch");
+
 const poster = async (url = '', data = {}) => {
 
     const response = await fetch(url, {
@@ -14,9 +16,7 @@ const poster = async (url = '', data = {}) => {
     try {
 
         const newData = await response.json();
-
         console.log(newData)
-
         return newData;
 
     } catch (error) {

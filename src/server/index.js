@@ -23,7 +23,7 @@ app.use(cors());
 console.log(__dirname);
 
 const STORE = [];
-// console.log(STORE)
+
 let data;
 
 var textapi = new aylien({

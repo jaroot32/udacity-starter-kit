@@ -1,5 +1,5 @@
 function displayEntries(arr) {
-    
+
         let list = document.getElementById("entryList");
 
         Client.clearEntries();

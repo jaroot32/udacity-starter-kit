@@ -10,7 +10,5 @@ main {
 
 section {
     max-width: 800px;
-    margin: 50px auto;
+    margin: ($spacing * 3) auto;
 }
-
-$red: red;
